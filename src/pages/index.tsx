@@ -1,27 +1,11 @@
-import { Box } from "@chakra-ui/react";
-
-import CTASection from "components/samples/CTASection";
-import SomeImage from "components/samples/SomeImage";
-import SomeText from "components/samples/SomeText";
+import { Box } from "@chakra-ui/react"
 
 const Home = () => {
   return (
-    <Box
-      display={{ md: "flex" }}
-      alignItems="center"
-      minHeight="70vh"
-      gap={8}
-      mb={8}
-      w="full"
-    >
-      <SomeImage />
-
-      <Box>
-        <SomeText />
-        <CTASection />
-      </Box>
+    <Box my={8} borderWidth={3} borderColor="teal" rounded={12} p={5} w="full">
+      Hello World
     </Box>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
