@@ -16,7 +16,6 @@
     "up-latest": "yarn up --latest",
     "release": "standard-version",
     "push-release": "git push --follow-tags origin main",
-    "prepare": "husky install",
     "codegen": "graphql-codegen --config codegen.yml",
     "deploy": "git add . && git commit -m "
   },
