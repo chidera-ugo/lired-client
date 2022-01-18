@@ -128,7 +128,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   }
 
   const client = createClient({
-    url: "http://localhost:4000/graphql",
+    url: process.env.NEXT_PUBLIC_BASE_URL!,
     exchanges: [
       dedupExchange,
       cacheExchange,
