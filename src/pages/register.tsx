@@ -2,10 +2,9 @@ import { Box, Button } from "@chakra-ui/react"
 import { Formik, Form, FormikProps } from "formik"
 import { useRouter } from "next/router"
 
+import { generateErrorMap } from "../utils/generateErrorMap"
 import InputField from "components/InputField"
 import { useRegisterMutation } from "generated/graphql"
-
-import { generateErrorMap } from "./utils/generateErrorMap"
 
 function Register() {
   const [, register] = useRegisterMutation()
